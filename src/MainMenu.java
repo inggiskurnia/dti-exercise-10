@@ -24,7 +24,7 @@ public class MainMenu {
                 }
                 case 1 : {
                     User.register();
-                    selectedMenu = 0;
+                    selectedMenu = UserInput.quitMenu("Press q to go back");
                     break;
                 }
                 case 2 : {

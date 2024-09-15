@@ -49,4 +49,24 @@ public class UserInput {
         }
         return inputtedDouble;
     }
+
+    public static int quitMenu(String prompt){
+        try {
+            while(true){
+                System.out.println(prompt);
+                char a = scanner.nextLine().charAt(0);
+
+                if (a == 'q'){
+                    return 0;
+                } else{
+                    System.out.println("Invalid input ! ");
+                }
+            }
+
+        } catch (EmptyInputException e) {
+            throw new EmptyInputException();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

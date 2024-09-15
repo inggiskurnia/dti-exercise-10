@@ -29,19 +29,22 @@ public class InventoryMenu {
                 case 1 : {
                     InventorySystem.borrowItem(loggedInUser);
                     System.out.println();
-                    selectedMenu = 0;
+                    selectedMenu = UserInput.quitMenu("Press q to go back");
+                    System.out.println();
                     break;
                 }
                 case 2 : {
                     InventorySystem.returnItem(loggedInUser);
                     System.out.println();
-                    selectedMenu = 0;
+                    selectedMenu = UserInput.quitMenu("Press q to go back");
+                    System.out.println();
                     break;
                 }
                 case 3 : {
                     ArrayList<String> status = InventorySystem.checkStatus(loggedInUser);
                     System.out.println();
-                    selectedMenu = 0;
+                    selectedMenu = UserInput.quitMenu("Press q to go back");
+                    System.out.println();
                     break;
                 }
                 case 4 : {
